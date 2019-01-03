@@ -26,7 +26,7 @@ yum -y install git ansible-2.4.2.0
 ### 1.2 Get the deployer
 ```
 cd
-git clone https://github.com/OMajeed/contrail-vpp-deploy
+git clone https://github.com/Sofioni/contrail-vpp-deploy
 ./setup.sh
 cd contrail-ansible-deployer
 ```
