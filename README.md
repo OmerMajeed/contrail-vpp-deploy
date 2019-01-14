@@ -62,6 +62,7 @@ instances:
         VPP_CONTROL_ADDR: <control interface IP, same subnet as of BMS>
         PHYSICAL_INTERFACE: enp2s0f1
         AGENT_MODE: dpdk
+        HUGE_PAGES: 10240
       openstack_compute:
   bms3:
     provider: bms
@@ -70,9 +71,10 @@ instances:
       vrouter:
         PHYSICAL_INTERFACE: enp2s0f1
         AGENT_MODE: dpdk
+        HUGE_PAGES: 10240
       openstack_compute:
 contrail_configuration:
-  CONTRAIL_VERSION: ocata-dev
+  CONTRAIL_VERSION: ocata-v1
   RABBITMQ_NODE_PORT: 5673
   ENCAP_PRIORITY: VXLAN,MPLSoGRE,MPLSoUDP
   PHYSICAL_INTERFACE: enp2s0f1
